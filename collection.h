@@ -22,6 +22,7 @@ struct collection {
     int num_limits;       // 限制函数的数量
 };
 
+void reset_output_buffer();
 void collection_free(struct collection* c);
 struct collection *collection_new(void);
 int collection_add_variable(struct collection *c, char *var_name, int val0, ...);
